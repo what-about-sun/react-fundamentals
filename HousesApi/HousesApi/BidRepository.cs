@@ -87,13 +87,6 @@ public class BidRepository
             HouseId = 5,
             Bidder = "Marcus Scott",
             Amount = 170000
-        },
-        new()
-        {
-            HouseId = 1,
-            Bidder = "Roland",
-            Amount = 203000,
-            Id = 13
         }
     ];
     public IEnumerable<Bid> GetBids(int houseId)
@@ -103,6 +96,8 @@ public class BidRepository
     
     public void Add(Bid bid)
     {
+        var maxId = bids.Max(b => b.Id);
+        bid.Id = maxId + 1;
         bids.Add(bid);
     }
 };

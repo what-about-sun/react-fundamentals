@@ -25,9 +25,9 @@ app.UseHttpsRedirection();
 
 app.MapGet("/house", (HouseRepository repo) => repo.GetAll());
 app.MapGet("/bid/{houseId}", (BidRepository repo, int houseId) => repo.GetBids(houseId));
-app.MapPost("/bid/{houseId}", (BidRepository repo, Bid bid, int houseId) =>
+app.MapPost("/bid", (BidRepository repo, Bid bid) =>
 {
-    bid.HouseId = houseId;
     repo.Add(bid);
+    return bid;
 });
 app.Run();

@@ -14,7 +14,7 @@ const useBids = (houseId) => {
   }, [get]);
 
   const postBid = async (bid) => {
-    await fetch(`https://localhost:7180/bid/${bid.houseId}`, {
+    const rsp = await fetch(`https://localhost:7180/bid`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -22,11 +22,12 @@ const useBids = (houseId) => {
       },
       body: JSON.stringify(bid),
     });
+    return await rsp.json();
   };
 
-  const addBid = (bid) => {
-    postBid(bid);
-    setBids([...bids, bid]);
+  const addBid = async (bid) => {
+    const postedBid = await postBid(bid);
+    setBids([...bids, postedBid]);
   };
 
   return { bids, loadingState, addBid };

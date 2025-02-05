@@ -1,4 +1,3 @@
-import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import HouseList from './components/houseList'
 import House from './components/house'

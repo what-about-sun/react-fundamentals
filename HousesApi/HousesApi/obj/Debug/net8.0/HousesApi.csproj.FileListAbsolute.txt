@@ -33,3 +33,4 @@ C:\Users\rolan\source\repos\react-fundamentals\HousesApi\HousesApi\obj\Debug\net
 C:\Users\rolan\source\repos\react-fundamentals\HousesApi\HousesApi\obj\Debug\net8.0\HousesApi.pdb
 C:\Users\rolan\source\repos\react-fundamentals\HousesApi\HousesApi\obj\Debug\net8.0\HousesApi.genruntimeconfig.cache
 C:\Users\rolan\source\repos\react-fundamentals\HousesApi\HousesApi\obj\Debug\net8.0\ref\HousesApi.dll
+C:\Users\rolan\source\repos\react-fundamentals\HousesApi\HousesApi\obj\Debug\net8.0\HousesApi.sourcelink.json
