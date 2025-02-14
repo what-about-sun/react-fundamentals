@@ -14,7 +14,8 @@
       import ReactDOMClient from "https://esm.sh/react-dom@19/client?dev"
 
       const jsDiv = document.getElementById("dateJs");
-      var rootElement = ReactDOMClient.createRoot(document.getElementById('dateReact'));
+      var rootElement = ReactDOMClient
+        .createRoot(document.getElementById('dateReact'));
 
       const render = () => {
         jsDiv.innerHTML = `

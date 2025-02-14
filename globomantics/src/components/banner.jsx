@@ -10,6 +10,16 @@ const subtitleStyle = {
 
 const Banner = ({ children }) => {
   const navigate = useNavigate();
+
+  return (
+    <header>
+      <div>
+        <img src="./GloboLogo.png" alt="logo" />
+      </div>
+      <div>Providing houses all over the world</div>
+    </header>
+  );
+
   return (
     <header className="row mb-4">
       <div className="col-5">
