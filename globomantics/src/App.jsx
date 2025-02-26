@@ -5,17 +5,15 @@ import Banner from './components/banner'
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Banner>
-          <div>Providing houses all over the world</div>
-        </Banner>
-        <Routes>
-          <Route index element={<HouseList />} />
-          <Route path="house" element={<House />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Banner>
+        <div>Providing houses all over the world</div>
+      </Banner>
+      <Routes>
+        <Route index element={<HouseList />} />
+        <Route path="house" element={<House />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

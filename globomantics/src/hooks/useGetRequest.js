@@ -7,7 +7,7 @@ const useGetRequest = (url) => {
   const get = useCallback(async () => {
     setLoadingState(loadingStatus.isLoading);
     try {
-      const rsp = await fetch(`https://localhost:7180${url}`);
+      const rsp = await fetch(`https://localhost:4000${url}`);
       const result = await rsp.json();
       setLoadingState(loadingStatus.loaded);
       return result;

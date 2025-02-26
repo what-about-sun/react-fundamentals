@@ -2,10 +2,7 @@
 
 public class HouseRepository
 {
-    public List<House> GetAll()
-    {
-        return
-        [
+    private List<House> houses =         [
             new House
             {
                 Id = 1,
@@ -61,5 +58,15 @@ public class HouseRepository
                 Photo = "164558"
             }
         ];
+    public IEnumerable<House> GetAll()
+    {
+        return houses;
+    }
+    
+    public void Add(House house)
+    {
+        var maxId = houses.Max(h => h.Id);
+        house = house with { Id = maxId + 1 };
+        houses.Add(house);
     }
 }
