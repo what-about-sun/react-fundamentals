@@ -9,12 +9,12 @@ const subtitleStyle = {
 
 const Banner = () => {
   return (
-    <header className="row mb-4">
-      <div className="col-5">
+    <header className="row mt-5">
+      <div className="col-2">
         <img src={logo} className={logoClass} alt="logo" />
       </div>
-      <div className="col-7 mt-5" style={subtitleStyle}>
-        Providing houses all over the world
+      <div className="col-8 mt-4" style={subtitleStyle}>
+        Providing houses all over the world, and may be in the univers -- I was here :-)
       </div>
     </header>
   );
