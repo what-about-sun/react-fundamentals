@@ -1,7 +1,8 @@
 import { use, useState } from "react";
 import HouseRow from "./HouseRow";
 
-const fetchHouses = fetch("https://localhost:4000/house")
+//const fetchHouses = fetch("http://localhost:4000/house")
+const fetchHouses = fetch('/mylocalhousedata.json')
   .then(r => r.json());
 
 const HouseList = () => {

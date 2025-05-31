@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Banner>
-        <div>Providing houses all over the world</div>
+        <div>Providing houses all over the world - fetch('/mylocalhousedata.json') </div>
       </Banner>
       <Suspense fallback={<h3>Loading...</h3>}>
         <HouseList />
