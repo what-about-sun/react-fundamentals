@@ -14,6 +14,12 @@ const houseArray = [
     country: "Switzerland",
     price: 500000,
   },
+  {
+    id: 3,
+    address: "123 A-Street",
+    country: "A-Land",
+    price: 12,
+  },
 ];
 
 const HouseList = () => {
@@ -34,7 +40,7 @@ const HouseList = () => {
     <>
       <div className="row mb-2">
         <h5 className="themeFontColor text-center">
-          Houses currently on the market
+          Houses currently on the market - I was also here in the HouseList.jsx :-)
         </h5>
       </div>
       <table className="table table-hover">
@@ -50,8 +56,25 @@ const HouseList = () => {
         </tbody>
       </table>
       <button onClick={addHouse} className="btn btn-primary">
-        Add
+        Add, if you like
       </button>
+      <div>
+        or
+      </div>
+      <div>
+      <button onClick={addHouse} className="btn btn-primary">
+        2nd Add
+      </button>
+      </div>
+            <div>
+        or
+      </div>
+      <div>
+      <button className="btn btn-primary">
+        to nothing
+      </button>
+      </div>
+
     </>
   );
 };

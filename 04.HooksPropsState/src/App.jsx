@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Banner>
-        <div>Providing houses all over the world</div>
+        <div>
+          Providing houses all over the world, and may be in the univers -- I was here :-)
+        </div>    
       </Banner>
       <HouseList/>
     </>

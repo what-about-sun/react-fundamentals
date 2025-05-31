@@ -10,10 +10,10 @@ const subtitleStyle = {
 const Banner = ({children}) => {
   return (
     <header className="row mb-4">
-      <div className="col-5">
+<div className="col-2">
         <img src={logo} className={logoClass} alt="logo" />
       </div>
-      <div className="col-7 mt-5" style={subtitleStyle}>
+      <div className="col-8 mt-4" style={subtitleStyle}>
         {children}
       </div>
     </header>
