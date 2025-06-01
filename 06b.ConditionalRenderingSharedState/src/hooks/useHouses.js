@@ -10,7 +10,8 @@ const useHouses = () => {
     const fetchHouses = async () => {
       setLoadingState(loadingStatus.isLoading);
       try {
-        const response = await fetch("https://localhost:4000/house");
+        //const response = await fetch("https://localhost:4000/house");
+        const response = await fetch('/mylocalhousedata.json');        
         const houses = await response.json();
         setHouses(houses);
         setLoadingState(loadingStatus.loaded);

@@ -25,7 +25,7 @@ const HouseList = ({selectHouse}) => {
     <>
       <div className="row mb-2">
         <h5 className="themeFontColor text-center">
-          Houses currently on the market
+          Houses currently on the market - click on a house to see details - thanks!
         </h5>
       </div>
       <table className="table table-hover">

@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Banner>
-        <div>Providing houses all over the world</div>
+        <div>Providing houses all over the world, an I was here :-)</div>
       </Banner>
       {selectedHouse ? <House house={selectedHouse} />
         : <HouseList selectHouse={setSelectedHouseWrapper} />}
