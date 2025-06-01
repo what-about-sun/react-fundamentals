@@ -1,5 +1,5 @@
 import navValues from "../navigation/navValues";
-import House from "./house";
+import House from "./House";
 import HouseList from "./HouseList";
 
 const ComponentPicker = ({ currentNavLocation }) => {

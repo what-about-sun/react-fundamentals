@@ -1,9 +1,14 @@
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import currencyFormatter from "../helpers/currencyFormatter";
 
 const House = () => {
   const location = useLocation();
-  const { house } = location.state;
+  const house = location.state?.house;
+
+  if (!house) {
+    return <div>Kein Haus ausgewählt oder keine Daten vorhanden.</div>;
+  }
+
   return (
     <>
       <div className="row">

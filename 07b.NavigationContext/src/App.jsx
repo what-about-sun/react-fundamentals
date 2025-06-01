@@ -18,7 +18,9 @@ function App() {
     <navigationContext.Provider value={nav}>
       <ErrorBoundary fallback="Something went wrong!">
         <Banner>
-          <div>Providing houses all over the world</div>
+          <div>Providing houses all over the world - I was here :-)</div>
+          <div>---</div>
+          <div>to navigate home: please click on the Logo leftsite, thanks.</div>
         </Banner>
         <ComponentPicker currentNavLocation={nav.current} />
       </ErrorBoundary>
